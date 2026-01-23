@@ -125,7 +125,8 @@ python3 dlh.py scan VulnerAppDLH.apk
 ```
 
 ### 3. View Results
-DLH will generate a report in the `output/` directory (e.g., `VulnerAppDLH.apk_results.json`). You should see findings for:
+DLH will generate a report in the `output/` directory (e.g., `VulnerAppDLH.apk_results.json`).
+
 *   `Hardcoded Secrets`
 *   `SQL Injection`
 *   `GraphQL Injection`
