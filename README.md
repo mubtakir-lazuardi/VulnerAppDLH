@@ -1,4 +1,4 @@
-# VulnerApp for Droid-LLM-Hunter
+# VulnerApp Droid-LLM-Hunter
 
 **VulnerAppDLH** is a deliberately insecure Android application designed as a **training ground** and **testbed** for the [Droid-LLM-Hunter](https://github.com/roomkangali/droid-llm-hunter) security analysis tool. It implements a wide range of common Android vulnerabilities based on the **OWASP Mobile Top 10** and **MASVS** standards, serving as a perfect target to demonstrate DLH's detection capabilities.
 
