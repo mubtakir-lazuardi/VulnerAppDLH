@@ -37,15 +37,19 @@ jobs:
       - name: Build with Gradle
         run: ./gradlew assembleDebug
 
+      # [Debug] Verify APK was created
+      - name: Verify APK exists
+        run: |
+          ls -lh app/build/outputs/apk/debug/
+          pwd
+
       # 5. Run Droid-LLM-Hunter Scanner
       - name: Droid LLM Hunter Scan
         uses: mubtakir-lazuardi/droid-llm-hunter@main
         with:
-          # Point to the APK generated in Step 4
-          apk-path: app/build/outputs/apk/debug/app-debug.apk
-          provider: "gemini"
-          # Ensure GEMINI_KEY is set in Repo Settings > Secrets
-          api-key: ${{ secrets.GEMINI_KEY }}
+          apk_path: app/build/outputs/apk/debug/app-debug.apk
+          provider: gemini
+          api_key: ${{ secrets.GEMINI_KEY }}
 
       # 6. Upload the Security Report
       - name: Upload Report
