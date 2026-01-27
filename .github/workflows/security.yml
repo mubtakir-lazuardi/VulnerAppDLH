@@ -25,6 +25,10 @@ jobs:
           distribution: "temurin"
           cache: gradle
 
+      # [Debug] Check file structure (Helps to find where gradlew is)
+      - name: List files (Debug)
+        run: ls -R
+
       # 3. Grant Permissions to Gradlew
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
