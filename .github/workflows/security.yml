@@ -42,7 +42,7 @@ jobs:
     
       # 6. Run Security Scan
       - name: Droid LLM Hunter Scan
-        uses: mubtakir-lazuardi/droid-llm-hunter@v1.1.6
+        uses: mubtakir-lazuardi/droid-llm-hunter@v1.1.7
         with:
           apk-path: app/build/outputs/apk/debug/app-debug.apk
           provider: gemini
