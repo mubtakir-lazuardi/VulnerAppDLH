@@ -44,11 +44,11 @@ jobs:
       - name: Droid LLM Hunter Scan
         uses: mubtakir-lazuardi/droid-llm-hunter@v1.1.6
         with:
-          apk-path: "app/build/outputs/apk/debug/app-debug.apk"
-          provider: "gemini"
-          model: "gemini-1.5-pro-latest"
+          apk-path: app/build/outputs/apk/debug/app-debug.apk
+          provider: gemini
+          model: gemini-1.5-pro-latest
           api-key: ${{ secrets.GEMINI_KEY }}
-          rules: "sql_injection:true, webview_xss:false, hardcoded_secrets:true"
+          rules: sql_injection:true, webview_xss:false, hardcoded_secrets:true
           
       # 7. Upload Security Report
       - name: Upload Report
