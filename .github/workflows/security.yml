@@ -46,7 +46,7 @@ jobs:
         with:
           apk-path: app/build/outputs/apk/debug/app-debug.apk
           provider: gemini
-          model: gemini-1.5-pro-latest
+          model: gemini-2.0-flash
           api-key: ${{ secrets.GEMINI_KEY }}
           rules: sql_injection:true, webview_xss:false, hardcoded_secrets:true
           
